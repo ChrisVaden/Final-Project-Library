@@ -2,15 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Not so Library of Babel</title>
+  <title>Babel's Book Search</title>
+  <style>
+    body { font-family: sans-serif; max-width: 500px; margin: 40px auto; padding: 0 20px; text-align: center; }
+    form { display: flex; gap: 8px; justify-content: center; }
+    input, button { padding: 8px 12px; font-size: 16px; }
+    input { flex: 1; }
+  </style>
 </head>
 <body>
-<h1>
-    Insert your book below!
-</h1>
 
+  <h1>Babel's Book Search</h1>
 
+  <form action="/search" method="GET">
+    <input type="text" name="q" placeholder="Search by title, author, or ISBN..." required>
+    <button type="submit">Search</button>
+  </form>
 
 </body>
 </html>
